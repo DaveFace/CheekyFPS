@@ -4,6 +4,8 @@ This project is a deliberately barebones first person controller for Unreal Engi
 
 Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That's it.
 
+[You can see a short demonstration video here.](https://www.youtube.com/watch?v=oIJvjmunHZY&feature=youtu.be)
+
 ## Features
 - First Person Movement with multiple movement speeds and modifiers (e.g. moving backwards or side to side is slower)
 - Smooth crouching
