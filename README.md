@@ -1,2 +1,41 @@
-# CheekyFPS
-Simple FPS Controller for Unreal Engine 4
+# Cheeky First Person Controller
+
+This project is a deliberately barebones first person controller for Unreal Engine 4, intended as a jumping off point for any first person projects I might pursue in future - and maybe it will help someone else do the same. I have kept things as modular as possible, so it should be straightforward to migrate some elements into existing projects.
+
+Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That's it.
+
+## Features
+- First Person Movement with multiple movement speeds and modifiers (e.g. moving backwards or side to side is slower)
+- Smooth crouching
+- Correct implementation of mouse smoothing that avoids using a spring arm (please stop doing this)
+- Smooth, animation-driven headbob system, with a dynamic spring for vertical jump/landing
+- Quake style camera roll (side to side)
+- Dynamic DOF
+- Basic footstep implementation (easily expandable!)
+- Basic health component including fall damage calculation
+
+## Things I might add
+- Add run / crouch toggles
+- Add some kind of interaction system
+
+## Getting Started
+This project is 100% Blueprints, using Unreal Engine 4.25. No other pre-requisites required.
+
+I have tried to stick to [Allar's fantastic style guide](https://github.com/Allar/ue4-style-guide), at least where it comes to asset naming conventions.
+
+## Contributing or Feature Requests
+I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
+
+Also happy to take feature requests within reason, if I think it could be something cool to add.
+
+## Authors
+
+* **Dave Watts** - [ArtStation](https://www.artstation.com/daveface) / [Twitter](https://twitter.com/therealdaveface)
+
+## License
+
+This project is licensed under the MIT License. Some example content (see acknowledgements) is not included in this license.
+
+## Acknowledgments
+
+- Example footstep sounds from https://freesound.org/
