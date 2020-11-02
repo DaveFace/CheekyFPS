@@ -19,7 +19,6 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 
 ## Things I might add
 - A proper settings solution using a save binary file
-- Some kind of interaction system
 
 ## Getting Started
 This project is 100% Blueprints, using Unreal Engine 4.25. No other pre-requisites required.
@@ -28,7 +27,10 @@ I have tried to stick to [Allar's fantastic style guide](https://github.com/Alla
 
 ## Update History
 **01/11/2020** : First Release
+
 **01/11/2020** : Added more comments to code / classes. Cleaned up some classes (removed unused vars etc). Added crouch and run toggles. Added regenerating health option.
+
+**02/11/2020** : Added basic interaction system
 
 ## Contributing or Feature Requests
 I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
