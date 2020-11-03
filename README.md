@@ -9,7 +9,7 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 ## Features
 - First Person Movement with multiple movement speeds and modifiers (e.g. moving backwards or side to side is slower)
 - Leaning system with collision detection
-- Smooth crouching
+- Smooth stance system for standing, crouched, and prone
 - Correct implementation of mouse smoothing that avoids using a spring arm (please stop doing this)
 - Smooth, curve-driven headbob system, with a dynamic spring for vertical jump/landing
 - Quake style camera roll (side to side)
@@ -31,6 +31,8 @@ I have tried to stick to [Allar's fantastic style guide](https://github.com/Alla
 **01/11/2020** : Added more comments to code / classes. Cleaned up some classes (removed unused vars etc). Added crouch and run toggles. Added regenerating health option.
 
 **02/11/2020** : Added basic interaction system
+
+**03/11/2020** : Replaced simple crouch with a 3-way stance system on request
 
 ## Contributing or Feature Requests
 I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
