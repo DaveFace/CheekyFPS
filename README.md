@@ -8,6 +8,7 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 
 ## Features
 - First Person Movement with multiple movement speeds and modifiers (e.g. moving backwards or side to side is slower)
+- Interaction framework including messages, hold-style interactions, and movement/view restrictions
 - Leaning system with collision detection
 - Smooth stance system for standing, crouched, and prone
 - Correct implementation of mouse smoothing that avoids using a spring arm (please stop doing this)
@@ -19,11 +20,19 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 
 ## Things I might add
 - A proper settings solution using a save binary file
+- Parkour actions (climbing, vaulting)
 
 ## Getting Started
 This project is 100% Blueprints, using Unreal Engine 4.25. No other pre-requisites required.
 
 I have tried to stick to [Allar's fantastic style guide](https://github.com/Allar/ue4-style-guide), at least where it comes to asset naming conventions.
+
+As this is still under active development / tinkering, relying on this for any project *right now* could be a bad idea. If you want to use it, I would recommend creating your character as a child blueprint of `BP_CheekyCharacter` so any changes upstream do not affect your own functionality.
+
+## Contributing, Bug Reports, and Feature Requests
+I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
+
+If you encounter any problems, or want to request I add something (no guarantees!) please create a Github issue and I will look into it.
 
 ## Update History
 **01/11/2020** : First Release
@@ -34,10 +43,7 @@ I have tried to stick to [Allar's fantastic style guide](https://github.com/Alla
 
 **03/11/2020** : Replaced simple crouch with a 3-way stance system on request
 
-## Contributing or Feature Requests
-I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
-
-Also happy to take feature requests within reason, if I think it could be something cool to add.
+**06/11/2020** : Modified OnLanded event to reduce dependency on health component. Added framework for Parkour actions - doesn't actually do anything yet. Added several features to interactions including messages, hold interaction type, and primary/secondary interaction events. Added some more example interactors including a fancy door. Added a basic level/blueprint communication system.
 
 ## Authors
 
