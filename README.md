@@ -17,10 +17,10 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 - Dynamic DOF
 - Basic footstep implementation (easily expandable!) synced with headbob
 - Basic health component including fall damage calculation
+- Basic settings management
 
 ## Things I might add
-- A proper settings solution using a save binary file
-- Parkour actions (climbing, vaulting)
+- Parkour actions (climbing, vaulting) There is a WIP implementation of this but it doesn't work yet!
 
 ## Getting Started
 This project is 100% Blueprints, using Unreal Engine 4.25. No other pre-requisites required.
@@ -44,6 +44,8 @@ If you encounter any problems, or want to request I add something (no guarantees
 **03/11/2020** : Replaced simple crouch with a 3-way stance system on request
 
 **06/11/2020** : Modified OnLanded event to reduce dependency on health component. Added framework for Parkour actions - doesn't actually do anything yet. Added several features to interactions including messages, hold interaction type, and primary/secondary interaction events. Added some more example interactors including a fancy door. Added a basic level/blueprint communication system.
+
+**02/01/2020** : Refactored the ways settings are handled to use a proper save binary, also added a pause / settings menu for testing. Improved the lean component a bit so it no longer requires a springarm parent. Tidied up the (still nonfunctional) parkour stuff.
 
 ## Authors
 
