@@ -1,6 +1,6 @@
 # Cheeky First Person Controller
 
-This project is a deliberately barebones first person controller for Unreal Engine 4, intended as a jumping off point for any first person projects I might pursue in future - and maybe it will help someone else do the same. I have kept things as modular as possible, so it should be straightforward to migrate some elements into existing projects.
+This project is a deliberately barebones singleplayer first person controller for Unreal Engine 4, intended as a jumping off point for any first person projects I might pursue in future - and maybe it will help someone else do the same. I have kept things as modular as possible, so it should be straightforward to migrate some elements into existing projects.
 
 Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That's it.
 
@@ -20,7 +20,7 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 - Basic settings management
 
 ## Things I might add
-- Parkour actions (climbing, vaulting) There is a WIP implementation of this but it doesn't work yet!
+- Parkour actions (climbing, vaulting) There is a WIP implementation of parkour detection, but the actual movement is not implemented. I'm not sure when / if I will get around to doing this. If you manage to get it working, feel free to send me a note and we can merge it.
 
 ## Getting Started
 This project is 100% Blueprints, using Unreal Engine 4.25. No other pre-requisites required.
@@ -30,7 +30,7 @@ I have tried to stick to [Allar's fantastic style guide](https://github.com/Alla
 As this is still under active development / tinkering, relying on this for any project *right now* could be a bad idea. If you want to use it, I would recommend creating your character as a child blueprint of `BP_CheekyCharacter` so any changes upstream do not affect your own functionality.
 
 ## Contributing, Bug Reports, and Feature Requests
-I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6969
+I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#1337
 
 If you encounter any problems, or want to request I add something (no guarantees!) please create a Github issue and I will look into it.
 
