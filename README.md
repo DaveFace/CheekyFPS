@@ -14,10 +14,11 @@ Why 'Cheeky'? Well, it seemed funny prefixing all the classes with Cheeky. That'
 - Correct implementation of mouse smoothing that avoids using a spring arm (please stop doing this)
 - Smooth, curve-driven headbob system, with a dynamic spring for vertical jump/landing
 - Quake style camera roll (side to side)
-- Dynamic DOF
+- Dynamic DOF (now disabled by default)
 - Basic footstep implementation (easily expandable!) synced with headbob
 - Basic health component including fall damage calculation
 - Basic settings management
+- Weapon sway component that doesn't use a spring-arm!
 
 ## Things I might add
 - Parkour actions (climbing, vaulting) There is a WIP implementation of parkour detection, but the actual movement is not implemented. I'm not sure when / if I will get around to doing this. If you manage to get it working, feel free to send me a note and we can merge it.
@@ -30,7 +31,7 @@ I have tried to stick to [Allar's fantastic style guide](https://github.com/Alla
 As this is still under active development / tinkering, relying on this for any project *right now* could be a bad idea. If you want to use it, I would recommend creating your character as a child blueprint of `BP_CheekyCharacter` so any changes upstream do not affect your own functionality.
 
 ## Contributing, Bug Reports, and Feature Requests
-I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#1337
+I can't imagine anyone wanting to contribute - but if you do, best to reach out to me on Discord: DaveFace#6274
 
 If you encounter any problems, or want to request I add something (no guarantees!) please create a Github issue and I will look into it.
 
@@ -46,6 +47,8 @@ If you encounter any problems, or want to request I add something (no guarantees
 **06/11/2020** : Modified OnLanded event to reduce dependency on health component. Added framework for Parkour actions - doesn't actually do anything yet. Added several features to interactions including messages, hold interaction type, and primary/secondary interaction events. Added some more example interactors including a fancy door. Added a basic level/blueprint communication system.
 
 **02/01/2020** : Refactored the ways settings are handled to use a proper save binary, also added a pause / settings menu for testing. Improved the lean component a bit so it no longer requires a springarm parent. Tidied up the (still nonfunctional) parkour stuff.
+
+**17/06/2020** : Last night I played a UE4 game that used a springarm component for doing weapon sway. This looked bad, please do not do this. I added a simple weapon sway component, however I got bored before adding ADS. 
 
 ## Authors
 
